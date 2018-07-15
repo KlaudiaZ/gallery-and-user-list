@@ -9,7 +9,7 @@ if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['password'])
     $result -> bindParam(':password', $_POST['password']);
     $result -> execute();
 
-    header('location: index.php?v=users');
+    echo '<META HTTP-EQUIV="Refresh" Content="0; URL=index.php?v=users">';
 }
 
 ?>

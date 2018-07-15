@@ -8,11 +8,11 @@ if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['password'])
     $result -> bindParam(':id', $_GET['id']);
     $result -> execute();
 
-    header('location: index.php?v=users');
+    echo '<META HTTP-EQUIV="Refresh" Content="0; URL=index.php?v=users">';
 }
 
 if (!isset($_GET['id'])) {
-    header('location: index.php?v=users');
+    echo '<META HTTP-EQUIV="Refresh" Content="0; URL=index.php?v=users">';
 }
 
 $result = $pdo -> prepare('SELECT * FROM users WHERE id=:id');
