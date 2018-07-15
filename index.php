@@ -1,5 +1,7 @@
 <?php
-
+include ('db/pdo.php');
+include ("modules/user_form.php");
+include ('utils/utils.php');
 include ("header.html");
 
 if (array_key_exists("v", $_GET)) {
