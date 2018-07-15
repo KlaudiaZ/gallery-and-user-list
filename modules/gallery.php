@@ -27,7 +27,7 @@
                 ?>
 
                 <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6">
-                    <img src="data:image/jpg;base64,<?php echo base64_encode( $image['image'] ); ?>" class="img-responsive">
+                    <img src="data:image/jpg;base64,<?php echo base64_encode( $image['image'] ); ?>" class="img-responsive" width="200" height="200">
                 </div>
 
             <?php } ?>
@@ -40,7 +40,7 @@
             <br>
             <label>Upload image:</label>
             <br>
-            <input type="file" accept=".jpg" name="picture" id="picture" required>
+            <input type="file" accept="image/*" name="picture" id="picture" required>
             <br>
             <button class="btn btn-success">Send file</button>
         </div>
