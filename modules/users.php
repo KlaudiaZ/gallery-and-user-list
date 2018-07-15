@@ -24,7 +24,7 @@
                         <td><?php echo $user['email'];?></td>
                         <td><?php echo $user['password'];?></td>
                         <td><a href="index.php?v=edit_user&id=<?php echo $user['id'] ?>" class="btn btn-success">Edit</a></td>
-                        <td><a href="index.php?v=delete_user&id=<?php echo $user['id'] ?>" class="btn btn-danger">Delete</a></td>
+                        <td><a onclick="return confirm('Are you sure you want to delete this?')" href="index.php?v=delete_user&id=<?php echo $user['id'] ?>" class="btn btn-danger">Delete</a></td>
 
             <?php } ?>
 
