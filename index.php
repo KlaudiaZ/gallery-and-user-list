@@ -1,6 +1,6 @@
 <?php
 
-include ("index.html");
+include ("header.html");
 
 if (array_key_exists("v", $_GET)) {
     $module = $_GET["v"];
@@ -16,5 +16,6 @@ if (file_exists($moduleDir)) {
     header ("HTTP/1.1 404 Not Found");
     echo "<h1>404 Page Not Found</h1>";
 }
+
 
 ?>
